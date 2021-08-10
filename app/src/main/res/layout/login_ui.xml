@@ -15,7 +15,7 @@
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:background="@drawable/ripple_button"
-            android:text="제발 바뀌어라"
+            android:text="회원 로그인"
             android:gravity="center"
             android:textSize="18dp"
             />
@@ -59,7 +59,7 @@
             android:id="@+id/nonmemberLogin"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="비회원 이소영"
+            android:text="비회원 로그인"
             android:textSize="18dp"
             android:gravity="center"
             android:background="@drawable/ripple_button"

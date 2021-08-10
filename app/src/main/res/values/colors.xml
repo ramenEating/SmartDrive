@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mainColor">#D4ECE5</color>
     <color name="buttonClick">#DAD2D2D2</color>
+    <color name="claer">#00000000</color>
 </resources>
