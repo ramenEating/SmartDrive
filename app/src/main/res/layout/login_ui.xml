@@ -15,7 +15,7 @@
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:background="@drawable/ripple_button"
-            android:text="이게 뭐야"
+            android:text="제발 바뀌어라"
             android:gravity="center"
             android:textSize="18dp"
             />
