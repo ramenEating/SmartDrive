@@ -10,18 +10,15 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
         <Button
-
             android:layout_margin="15dp"
             android:id="@+id/memberLogin"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:background="@drawable/ripple_button"
-            android:text="회원 로그인"
+            android:text="석! 은주 강사님"
             android:gravity="center"
             android:textSize="18dp"
             />
-
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
