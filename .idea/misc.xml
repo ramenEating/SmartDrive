@@ -10,18 +10,19 @@
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/colors.xml" value="0.1" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.25" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/login_ui.xml" value="0.1" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/drawable/button_line.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/drawable/chatbubble.xml" value="0.24427083333333333" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/activity_main.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/custom_ui.xml" value="0.175" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/customview.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/login_ui.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/map_parking.xml" value="0.264" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/restseat_prediction.xml" value="0.4" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/drawable/button_line.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/drawable/chatbubble.xml" value="0.28125" />
-        <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/drawable/ripple_button.xml" value="0.28125" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/customview.xml" value="0.26510416666666664" />
-        <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.25" />
+        <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.10555555555555556" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/login_ui.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/map_parking.xml" value="0.26510416666666664" />
-        <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/restseat_prediction.xml" value="0.26510416666666664" />
       </map>
     </option>
   </component>
