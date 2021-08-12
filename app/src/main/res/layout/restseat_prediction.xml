@@ -41,24 +41,12 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/menu_chat"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layout1"
-        android:orientation="vertical">
-
-
-        <ImageView
-            android:layout_gravity="left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/malpungsun_2" />
-
-
-    </LinearLayout>
-
-
+        android:gravity="left"
+        android:id="@+id/malpungsun_1"
+        android:src="@drawable/malpungsun_2" />
 
     <LinearLayout
         android:id="@+id/bottom_menu"
