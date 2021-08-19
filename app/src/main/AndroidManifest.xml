@@ -4,7 +4,7 @@
 
     <!-- 인터넷, 위치 권한 -->
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+   <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
 
     <application
         android:usesCleartextTraffic="true"
@@ -23,10 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Loading"  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">></activity>
+        <activity android:name=".Loading"  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity android:name=".Login"/>
         <activity android:name=".MapParking"/>
+        <activity android:name=".Mypage"/>
         <meta-data android:name="com.kakao.sdk.AppKey" android:value="f43c0c8e749ea4a8583ddfcaf6a22472"/>
     </application>
+
+
 
 </manifest>
