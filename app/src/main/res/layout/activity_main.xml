@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:id="@+id/layout1"
-        android:weightSum="3"
+        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="65dp">
 
@@ -23,16 +23,6 @@
             android:textStyle="bold"
             />
         <Button
-            android:id="@+id/chatbot"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/button_line"
-            android:text="챗봇"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
-        <Button
             android:id="@+id/gas"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -43,7 +33,6 @@
             android:textSize="18dp"
             android:textStyle="bold"/>
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/menu_chat"

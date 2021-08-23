@@ -6,18 +6,18 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Loading extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loading_ui);
 
-        new Handler().postDelayed(new Runnable() {
+        Handler h = new Handler();
+        h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Loading.this, Login.class);
-                startActivity(intent);
+                startActivity(new Intent(Loading.this, Login.class));
+                finish();
             }
-        }, 3000); //3초 뒤 로딩 화면 -> 로그인 화면으로 넘어가기
+        }, 3000);
     }
 }

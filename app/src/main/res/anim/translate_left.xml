@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--왼쪽으로 이동하는 애니메이션 xml-->
+    <translate
+        android:fromYDelta="100%p"
+        android:toYDelta="40%p"
+        android:duration="500"
+        android:repeatCount="0"
+        android:fillAfter="true"/>
+    <!--
+        android:fromYDelta="100%p" - 애니메이션이 시작되는 Y좌표의 위치, 몇 퍼센트부터 시작할 것인지 나타냅니다.
+        android:toYDelta="40%p" - 애니메이션이 종료되는 Y좌표의 위치입니다.
+        android:duration="500" - 애니메이션의 지속 시간입니다. 저의 경우 0.5초 동안 애니메이션이 진행되도록 지정해준 것입니다.
+        android:repeatCount="0" - 애니메이션의 반복 횟수입니다.
+        android:fillAfter="true" - 애니메이션이 종료된 후에도 위치(상태)를 유지시킬 것인지 지정해줍니다.
+            true는 유지, false는 원래 위치로 다시 이동하게 됩니다.
+    -->
+</set>
