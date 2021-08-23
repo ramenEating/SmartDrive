@@ -14,7 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartDrive">
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="f43c0c8e749ea4a8583ddfcaf6a22472"/>
 
         <activity android:name=".Loading"
             android:exported="true">
@@ -30,12 +29,11 @@
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
+
             </intent-filter>
         </activity>
         <activity android:name=".MapGas"/>
         <activity android:name=".Mypage"/>
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="f43c0c8e749ea4a8583ddfcaf6a22472"/>
     </application>
-
-
-
 </manifest>
