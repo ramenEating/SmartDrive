@@ -15,7 +15,7 @@ public class MapGas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.map_gas);
+        setContentView(R.layout.mapgas_miniinfo);
 
         //지도(뷰 추가): 메인 뷰 그룹에 코드를 통해 add 해야 함
         MapView mapView = new MapView(this);

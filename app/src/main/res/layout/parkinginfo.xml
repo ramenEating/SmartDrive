@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button_line">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="주차장 정보"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="9pt"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/infoclosebt"
+        android:layout_margin="16dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/xicon"/>
+    <!--맵뷰-->
+    <RelativeLayout
+        android:layout_margin="18dp"
+        android:id="@+id/map_view"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_line"
+        android:layout_height="300dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_view"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/miniinfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주차장1"
+                android:layout_gravity="center"
+                android:textSize="10pt" />
+            <ImageButton
+                android:id="@+id/buttonStar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="235dp"
+                android:background="@drawable/staroff" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장 주소"
+            android:textSize="9pt" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="사용자 위치 기준 거리"
+            android:textSize="9pt" />
+
+    </LinearLayout>
+</RelativeLayout>

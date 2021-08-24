@@ -2,18 +2,15 @@ package com.example.smartdrive;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
-import net.daum.mf.map.api.MapPOIItem;
-import net.daum.mf.map.api.MapPoint;
+
 import net.daum.mf.map.api.MapView;
 
 public class MapParking extends AppCompatActivity {
@@ -28,7 +25,7 @@ public class MapParking extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.map_parking);
+        setContentView(R.layout.mapparking_miniinfo);
 
         //지도(뷰 추가): 메인 뷰 그룹에 코드를 통해 add 해야 함
         MapView mapView = new MapView(this);
