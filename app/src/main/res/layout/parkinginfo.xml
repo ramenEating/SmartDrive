@@ -5,19 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
-    <LinearLayout
-        android:id="@+id/layout1"
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@drawable/button_line">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="주차장 정보"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textSize="9pt"/>
-    </LinearLayout>
+        android:text="주차장 정보"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="9pt"/>
     <ImageButton
         android:id="@+id/infoclosebt"
         android:layout_margin="16dp"
@@ -26,17 +21,20 @@
         android:background="@drawable/xicon"/>
     <!--맵뷰-->
     <RelativeLayout
-        android:layout_margin="18dp"
-        android:id="@+id/map_view"
-        android:layout_below="@+id/layout1"
+        android:id="@+id/map_view_p"
         android:layout_width="match_parent"
-        android:background="@drawable/button_line"
-        android:layout_height="300dp"/>
+        android:layout_height="300dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/buttonline_ripple" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/map_view"
+        android:layout_below="@+id/map_view_p"
         android:layout_marginStart="18dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="18dp"
@@ -54,8 +52,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="주차장1"
+                android:textStyle="bold"
                 android:layout_gravity="center"
-                android:textSize="10pt" />
+                android:textSize="9pt" />
             <ImageButton
                 android:id="@+id/buttonStar"
                 android:layout_width="45dp"
@@ -73,7 +72,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="사용자 위치 기준 거리"
-            android:textSize="9pt" />
-
+            android:textSize="8pt"/>
+        <ExpandableListView
+            android:divider="@color/white"
+            android:childDivider="@color/white"
+            android:background="@drawable/listview_line"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:listSelector="#00000000"
+            android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight" />
     </LinearLayout>
 </RelativeLayout>

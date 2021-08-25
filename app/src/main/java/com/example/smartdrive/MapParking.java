@@ -10,11 +10,13 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import net.daum.mf.map.api.MapView;
 
 public class MapParking extends AppCompatActivity {
     Button searchBT, chatbotBt, gasBt;
+    TextView minititle;
     private SearchView mSearchView;
 
     //숨겨진 페이지가 열렸는지 확인하는 변수
@@ -26,6 +28,15 @@ public class MapParking extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapparking_miniinfo);
+
+        minititle = (TextView)findViewById(R.id.miniinfo_title); //팝업창 주차장 이름
+        //클릭 시 주차장 세부 정보창으로 넘어가게
+        minititle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MapParking.this, parkinginfo.class));
+            }
+        });
 
         //지도(뷰 추가): 메인 뷰 그룹에 코드를 통해 add 해야 함
         MapView mapView = new MapView(this);

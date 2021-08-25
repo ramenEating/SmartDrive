@@ -83,7 +83,7 @@
         android:layout_height="wrap_content">
         <ImageButton
             android:id="@+id/nowlocal"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:background="@drawable/nowlocal"/>
@@ -116,13 +116,14 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/xicon"
-                    android:layout_marginBottom="15dp"/>
+                    android:layout_marginBottom="20dp"/>
                 <TextView
                     android:id="@+id/miniinfo_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="주유소1"
-                    android:textSize="10pt"/>
+                    android:textStyle="bold"
+                    android:textSize="9pt"/>
             </LinearLayout>
             <ImageButton
                 android:id="@+id/buttonStar"
@@ -142,9 +143,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="주유소 주소"
-                android:textSize="9pt"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="9pt"/>
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="주유 요금"

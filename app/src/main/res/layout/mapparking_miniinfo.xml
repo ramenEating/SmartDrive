@@ -84,7 +84,7 @@
         android:layout_height="wrap_content">
         <ImageButton
             android:id="@+id/nowlocal"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:background="@drawable/nowlocal"/>
@@ -117,13 +117,14 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/xicon"
-                    android:layout_marginBottom="15dp"/>
+                    android:layout_marginBottom="20dp"/>
                 <TextView
                     android:id="@+id/miniinfo_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="주차장1"
-                    android:textSize="10pt"/>
+                    android:textStyle="bold"
+                    android:textSize="9pt"/>
             </LinearLayout>
             <ImageButton
                 android:id="@+id/buttonStar"
@@ -153,20 +154,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="주차 요금"
-                    android:textSize="9pt"/>
+                    android:textSize="8pt"/>
                 <TextView
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="|"
                     android:textStyle="bold"
-                    android:textSize="9pt"/>
+                    android:textSize="8pt"/>
                 <TextView
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="실시간 잔여석"
-                    android:textSize="9pt"/>
+                    android:textSize="8pt"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
