@@ -8,42 +8,8 @@
     android:background="@color/mainColor">
 
     <!--주차장 | 챗봇 | 주유소-->
-    <LinearLayout
-        android:id="@+id/layout1"
-        android:weightSum="3"
-        android:layout_width="match_parent"
-        android:layout_height="65dp">
-        <Button
-            android:id="@+id/parking"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/button_line"
-            android:text="주차장"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
-        <Button
-            android:id="@+id/chatbot"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/button_line"
-            android:text="챗봇"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
-        <Button
-            android:id="@+id/gas"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/button_line"
-            android:text="주유소"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
-    </LinearLayout>
+    <include layout="@layout/titlebar"/>
+    <!--순서대로 id = parking, chatbot, gas-->
 
     <!--검색창 | enter | 음성인식-->
     <LinearLayout
