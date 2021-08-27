@@ -1,6 +1,7 @@
 package com.example.smartdrive;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import net.daum.mf.map.api.MapView;
 
@@ -23,11 +25,18 @@ public class parkinginfo extends AppCompatActivity {
     ExpandableListView expandableListView;
     List<String> chapterList; //상위 리스트
     HashMap<String, List<String>> topicList; //하위 리스트
+    private Toolbar mToolbar; //툴바 설정
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.parkinginfo);
+
+        //툴바 설정
+        mToolbar.setTitle("마이페이지"); //타이틀 제목
+        mToolbar.setTitleTextColor(Color.BLACK); //글자 색상
+        setSupportActionBar(mToolbar); //툴바를 액션바로 사용함을 선언
+
 
         expandableListView = (ExpandableListView)findViewById(R.id.listView);
         showList();

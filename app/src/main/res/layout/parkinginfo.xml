@@ -5,26 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="주차장 정보"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="9pt"/>
-    <ImageButton
-        android:id="@+id/infoclosebt"
-        android:layout_margin="16dp"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:background="@drawable/xicon"/>
+
+    <!-- 툴바 넣기 -->
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
     <!--맵뷰-->
     <RelativeLayout
         android:id="@+id/map_view_p"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_below="@+id/tv1"
+        android:layout_below="@+id/toolbar"
         android:layout_marginStart="18dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="18dp"

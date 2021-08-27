@@ -1,5 +1,6 @@
 package com.example.smartdrive;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         parkingBt = (Button)findViewById(R.id.parking);
         gasBt = (Button)findViewById(R.id.gas);
         mypageBt = (Button)findViewById(R.id.mypage);
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MapParking.class));
             }
         });
+
         gasBt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

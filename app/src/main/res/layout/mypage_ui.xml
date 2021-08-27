@@ -5,28 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/buttonline_ripple"
-        >
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/close_button"/>
-        <TextView
-            android:layout_weight="6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="마이페이지         "
-            android:textSize="25dp"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-
-    </LinearLayout>
+    <!-- 툴바 넣기-->
+    <include layout="@layout/toolbar"
+       android:id="@+id/toolbar"/>
 
      <ListView
          android:id="@+id/mypageList"

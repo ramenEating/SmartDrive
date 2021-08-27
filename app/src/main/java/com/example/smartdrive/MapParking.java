@@ -1,5 +1,6 @@
 package com.example.smartdrive;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -28,6 +29,7 @@ public class MapParking extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapparking_miniinfo);
+
 
         minititle = (TextView)findViewById(R.id.miniinfo_title); //팝업창 주차장 이름
         //클릭 시 주차장 세부 정보창으로 넘어가게
