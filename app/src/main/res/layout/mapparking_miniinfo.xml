@@ -48,7 +48,6 @@
             android:background="@drawable/voice"
             android:textStyle="bold"/>
     </LinearLayout>
-
     <!--맵뷰-->
     <RelativeLayout
         android:layout_below="@+id/search_bar"
