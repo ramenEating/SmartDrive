@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smartdrive">
+
     <!-- 인터넷, 위치 권한 -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+
     <application
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -12,6 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartDrive">
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCw0u3je_FYtVzG4jSr1pM0Z332OfNHves" />
+
         <activity android:name=".Loading"
             android:exported="true">
             <intent-filter>
@@ -19,22 +24,26 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity android:name=".Login"/>
         <activity android:name=".MainActivity"/>
+
         <activity android:name=".MapParking" android:exported="true">
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
+
         <activity android:name=".parkinginfo"/>
+
         <activity android:name=".MapGas" android:exported="true">
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Mypage"/>
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="f43c0c8e749ea4a8583ddfcaf6a22472"/>
     </application>
 </manifest>

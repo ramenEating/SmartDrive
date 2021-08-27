@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -49,12 +49,23 @@
     </LinearLayout>
 
     <!--맵뷰-->
+    <!--
     <RelativeLayout
-        android:layout_below="@+id/search_bar"
-        android:layout_above="@+id/bottom_menu"
         android:id="@+id/map_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_below="@+id/search_bar" />
+        -->
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_view"
+        tools:context=".MapGas"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_below="@+id/search_bar" />
 
     <!--마이페이지-->
     <LinearLayout

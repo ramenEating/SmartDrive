@@ -55,6 +55,7 @@ public class MapParking extends AppCompatActivity {
                 startActivity(new Intent(MapParking.this, MainActivity.class));
             }
         });
+
         gasBt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
