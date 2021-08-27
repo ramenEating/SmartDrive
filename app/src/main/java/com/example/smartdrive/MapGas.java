@@ -75,13 +75,14 @@ public class MapGas extends AppCompatActivity implements OnMapReadyCallback {
         markerOptions.snippet("한국의 수도");  //클릭 시 보여주는 설명
         mMap.addMarker(markerOptions); //googleMap 객체에 추가해주면 지도에 표시
 
+        /*
         //moveCamera 카메라를 지정한 위도, 경도 이동
         mMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(10)); //지정한 단계로 카메라 줌 조정. 1단계=세계지도 수준. 숫자 클수록 상세지도
+*/
 
-        /* 78-79 줄 오작동시
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL, 10));
-         */
+
 
 
     }
