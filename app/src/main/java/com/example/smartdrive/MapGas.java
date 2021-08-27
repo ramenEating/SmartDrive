@@ -1,10 +1,17 @@
 package com.example.smartdrive;
 
+import android.content.Context;
 import android.content.Intent;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -19,18 +26,23 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import net.daum.mf.map.api.MapView;
 
-public class MapGas extends AppCompatActivity implements OnMapReadyCallback {
+public class MapGas extends AppCompatActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
     Button chatbotBt, parkingBt;
+    ImageButton mnowlocal;
+    private Object AutoPermissions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapgas_miniinfo);
 
+        //AutoPermissions.Companion.loadAllPermissions(this, 101);
+
         chatbotBt = (Button)findViewById(R.id.chatbot);
         parkingBt = (Button)findViewById(R.id.parking);
+        mnowlocal = (ImageButton)findViewById(R.id.nowlocal);
 
         //googleMap 객체가 준비될때 실행될 콜백 메소드
         SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map_view);
@@ -42,7 +54,6 @@ public class MapGas extends AppCompatActivity implements OnMapReadyCallback {
         ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
         mapViewContainer.addView(mapView);
 */
-
 
         chatbotBt.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -59,7 +70,46 @@ public class MapGas extends AppCompatActivity implements OnMapReadyCallback {
                 startActivity(new Intent(MapGas.this, MapParking.class));
             }
         });
+
+        mnowlocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startLocationService();
+            }
+        });
     }
+
+
+    public void startLocationService() {
+        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE); //LocationManager 객체 참조
+
+        try {
+            Location location = manager.getLastKnownLocation(LocationManager.GPS_PROVIDER);  //이전에 확인했던 위치 정보 가져오기
+            if (location != null) {
+                double latitude = location.getLatitude();
+                double longitude = location.getLongitude();
+            }
+
+            GPSListener gpsListener = new GPSListener();
+            long minTime = 10000;  //최소 시간 10초
+            float minDistance = 0;  //최소 거리0 => 10초마다 위치 정보 전달 받음
+
+            manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, minTime, minDistance, gpsListener);  //위치 요청하기
+            Toast.makeText(getApplicationContext(), "내 위치 걍 찍어봄ㅋ ", Toast.LENGTH_LONG).show();
+
+        } catch (SecurityException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /*
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        AutoPermissions.Companion.parsePermissions(this, requestCode, permissions, this);
+    }
+*/
+
 
     //맵이 사용할 준비 되면 (NULL이 아닌 googleMap 객체를 파라미터로 제공해 줄 수 있을때) 호출
     @Override
@@ -83,7 +133,19 @@ public class MapGas extends AppCompatActivity implements OnMapReadyCallback {
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL, 10));
 
-
-
     }
+
+    class GPSListener implements LocationListener {
+        public void onLocationChanged(Location location) {  //위치가 확인 되었을때 자동 호출
+            Double latitude = location.getLatitude();
+            Double longitude = location.getLongitude();
+        }
+    }
+
+    public void onProviderDisabled(String provider) { }
+
+    public void onProviderEnabled(String provider) { }
+
+    public void onStatusChanged(String provider, int status, Bundle extras) { }
+
 }

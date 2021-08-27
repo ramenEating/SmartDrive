@@ -50,11 +50,11 @@
     </LinearLayout>
     <!--맵뷰-->
     <RelativeLayout
-        android:layout_below="@+id/search_bar"
-        android:layout_above="@+id/bottom_menu"
         android:id="@+id/map_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_below="@+id/search_bar" />
 
     <!--마이페이지-->
     <LinearLayout
