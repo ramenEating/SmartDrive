@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- 툴바 넣기 -->
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <!--맵뷰-->
+    <RelativeLayout
+        android:id="@+id/map_view_p"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/buttonline_ripple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_view_p"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/miniinfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주유소1"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="9pt" />
+            <ImageButton
+                android:id="@+id/buttonStar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="235dp"
+                android:background="@drawable/staroff" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주유소 주소"
+            android:textSize="9pt" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="사용자 위치 기준 거리"
+            android:textSize="8pt"/>
+        <ExpandableListView
+            android:divider="@color/white"
+            android:childDivider="@color/white"
+            android:background="@drawable/listview_line"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:listSelector="#00000000"
+            android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight" />
+    </LinearLayout>
+</RelativeLayout>

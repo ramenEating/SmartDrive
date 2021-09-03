@@ -32,10 +32,13 @@
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/drawable/button_line.xml" value="0.22136752136752136" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/drawable/ripple_button.xml" value="0.11814345991561181" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/activity_main.xml" value="0.1064102564102564" />
+        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/gasinfo.xml" value="0.20811965811965813" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/loading_ui.xml" value="0.10427350427350428" />
-        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/login_ui.xml" value="0.10427350427350428" />
+        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/login_ui.xml" value="0.4" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/map_gas.xml" value="0.1064102564102564" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/map_parking.xml" value="0.1" />
+        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/mapparking_miniinfo.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/parkinginfo.xml" value="0.20811965811965813" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/drawable/button_line.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.10555555555555556" />
