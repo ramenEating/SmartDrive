@@ -9,62 +9,37 @@
         android:orientation="vertical"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
+
+
         <Button
-            android:layout_margin="15dp"
-            android:id="@+id/memberLogin"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ripple_button"
-            android:text="회원 로그인"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            />
-        <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_login"
+            android:layout_width="289dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="30dp"
-            android:orientation="horizontal">
-            <Button
-                android:layout_margin="10dp"
-                android:id="@+id/naverLogin"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/naver"
-                android:gravity="center"
-                android:textSize="15dp"
-                />
-            <Button
-                android:layout_margin="10dp"
-                android:id="@+id/facebookLogin"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/facebook"
-                android:gravity="center"
-                android:textSize="15dp"
-                />
-            <Button
-                android:layout_margin="10dp"
-                android:id="@+id/googleLogin"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/google"
-                android:gravity="center"
-                android:textSize="15dp"
-                />
-        </LinearLayout>
-        <Button
-            android:layout_margin="15dp"
-            android:layout_below="@+id/memberLogin"
-            android:id="@+id/nonmemberLogin"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="비회원 로그인"
-            android:textSize="18dp"
-            android:gravity="center"
-            android:background="@drawable/ripple_button"
+            android:layout_marginTop="50dip"
+            android:background="@color/input_register_bg"
             android:textStyle="bold"
-            />
+            android:text="@string/btn_login" />
+
+        <Button
+            android:id="@+id/btn_nonmember"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/input_register_bg"
+            android:layout_marginTop="50dip"
+            android:textStyle="bold"
+            android:text="@string/btn_nonmember" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/input_register_bg"
+            android:layout_marginTop="50dip"
+            android:textStyle="bold"
+            android:text="@string/btn_register" />
+
+
+
+
     </LinearLayout>
 </RelativeLayout>

@@ -11,16 +11,21 @@
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/chapter_list.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/colors.xml" value="0.1" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/customview.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/gasinfo.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/layout_mypage_item.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.25" />
-        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/login_ui.xml" value="0.1" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/login_ui.xml" value="0.25" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/map_parking.xml" value="0.30416666666666664" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mapgas_miniinfo.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mapparking_miniinfo.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mypage_ui.xml" value="0.16302083333333334" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/parkinginfo.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/restseat_prediction.xml" value="0.1" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/restseat_prediction_left.xml" value="0.165" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/restseat_prediction_talkbubble1.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/titlebar.xml" value="0.2441123188405797" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/toolbar.xml" value="0.2441123188405797" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/topics_list.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/drawable/button_line.xml" value="0.24427083333333333" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/drawable/chatbubble.xml" value="0.24427083333333333" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/drawable/ripple_button.xml" value="0.24427083333333333" />
@@ -32,13 +37,10 @@
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/drawable/button_line.xml" value="0.22136752136752136" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/drawable/ripple_button.xml" value="0.11814345991561181" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/activity_main.xml" value="0.1064102564102564" />
-        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/gasinfo.xml" value="0.20811965811965813" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/loading_ui.xml" value="0.10427350427350428" />
-        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/login_ui.xml" value="0.4" />
+        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/login_ui.xml" value="0.10427350427350428" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/map_gas.xml" value="0.1064102564102564" />
         <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/map_parking.xml" value="0.1" />
-        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/mapparking_miniinfo.xml" value="0.20462962962962963" />
-        <entry key="..\:/Users/ny/AndroidStudioProjects/SmartDriveA/app/src/main/res/layout/parkinginfo.xml" value="0.20811965811965813" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/drawable/button_line.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/syl/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.10555555555555556" />
@@ -46,7 +48,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

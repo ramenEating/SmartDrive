@@ -1,6 +1,8 @@
 package com.example.smartdrive;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,13 +10,16 @@ import android.widget.Button;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Login extends AppCompatActivity {
+public class Login extends AppCompatActivity
+{
+
     Button nonmember;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_ui);
-
 
         nonmember = (Button)findViewById(R.id.nonmemberLogin);
 
@@ -26,4 +31,14 @@ public class Login extends AppCompatActivity {
             }
         });
     }
+
+
+
+
+
+
+
+
+
 }
+

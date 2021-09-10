@@ -16,7 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartDrive">
 
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCw0u3je_FYtVzG4jSr1pM0Z332OfNHves" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCw0u3je_FYtVzG4jSr1pM0Z332OfNHves"
+            />
+        <meta-data
+            android:name = "com.kakao.sdk.AppKey"
+            android:value= "d996bec45e0d764e790e5bf10f58a690" />
 
         <activity android:name=".Loading"
             android:exported="true">

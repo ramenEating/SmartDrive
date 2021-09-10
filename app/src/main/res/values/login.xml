@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="input_register">#222222</color>
+    <color name="input_register_hint">#999999</color>
+    <color name="input_register_bg">#ffffff</color>
+
+
+</resources>
