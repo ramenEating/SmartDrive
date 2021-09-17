@@ -12,17 +12,31 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity
 {
-
-    Button nonmember;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_ui);
 
-        nonmember = (Button)findViewById(R.id.nonmemberLogin);
+        Button nonmember = (Button)findViewById(R.id.btn_nonmember);
+        Button member = (Button)findViewById(R.id.btn_member);
+        Button register = (Button)findViewById(R.id.btn_register);
 
+        //로그인 버튼 클릭 이벤트
+        member.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
+            }
+        });
+        //회원가입 버튼 클릭 이벤트
+        register.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
+            }
+        });
+        //비회원 로그인 버튼 클릭 이벤트
         nonmember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,14 +45,5 @@ public class Login extends AppCompatActivity
             }
         });
     }
-
-
-
-
-
-
-
-
-
 }
 
