@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity
         register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-
+                startActivity(new Intent(Login.this, Register.class));
             }
         });
         //비회원 로그인 버튼 클릭 이벤트

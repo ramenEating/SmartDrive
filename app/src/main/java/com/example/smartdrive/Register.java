@@ -11,16 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 
 public class Register extends AppCompatActivity {
-    private DatabaseReference mDatabase;
+    private FirebaseFirestore mDatabase = FirebaseFirestore.getInstance();
     EditText eName, eEmail;
     Button goregister;
-    int userNum=0;
+    int userNum = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,6 @@ public class Register extends AppCompatActivity {
         eName = (EditText) findViewById(R.id.et_name);
         eEmail = (EditText) findViewById(R.id.et_email);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference();
         goregister = (Button) findViewById(R.id.btn_goregister);
 
         goregister.setOnClickListener(new View.OnClickListener(){
@@ -42,7 +41,7 @@ public class Register extends AppCompatActivity {
                 result.put("name", getUserName);
                 result.put("email", getUserEmail);
 
-                for(int i=0; i<10; i++) userNum++;
+                userNum++;
                 String un = String.valueOf(userNum);
                 writeNewUser(un, getUserName, getUserEmail);
             }
@@ -51,16 +50,6 @@ public class Register extends AppCompatActivity {
 
     private void writeNewUser(String userId, String name, String email){
         User user = new User(name, email);
-        mDatabase.child("users").child(userId).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-                Toast.makeText(Register.this, "저장을 완료했습니다", Toast.LENGTH_SHORT).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Register.this, "저장을 실패했습니다", Toast.LENGTH_SHORT).show();
-            }
-        });
+        mDatabase.collection("users").document("User").set(user);
     }
 }
