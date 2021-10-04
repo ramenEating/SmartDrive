@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mypageBt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                //매인(챗봇) -> 지도(주유소) 화면 넘어갈 때 쓰일 인텐트
+                //매인(챗봇) -> 마이페이지 화면 넘어갈 때 쓰일 인텐트
                 startActivity(new Intent(MainActivity.this, Mypage.class));
             }
         });

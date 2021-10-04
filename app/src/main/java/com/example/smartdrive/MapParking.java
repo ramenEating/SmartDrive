@@ -41,17 +41,17 @@ public class MapParking extends AppCompatActivity {
         });
 
         //지도(뷰 추가): 메인 뷰 그룹에 코드를 통해 add 해야 함
-        MapView mapView = new MapView(this);
+        /*MapView mapView = new MapView(this);
         ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
         mapViewContainer.addView(mapView);
-
+        */
         chatbotBt = (Button)findViewById(R.id.chatbot);
         gasBt = (Button)findViewById(R.id.gas);
 
         chatbotBt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                //매인(챗봇) -> 챗봇 화면 넘어갈 때 쓰일 인텐트
+                //지도(주차장) -> 챗봇 화면 넘어갈 때 쓰일 인텐트
                 startActivity(new Intent(MapParking.this, MainActivity.class));
             }
         });
@@ -59,7 +59,7 @@ public class MapParking extends AppCompatActivity {
         gasBt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                //매인(챗봇) -> 지도(주유소) 화면 넘어갈 때 쓰일 인텐트
+                //지도(주차장) -> 지도(주유소) 화면 넘어갈 때 쓰일 인텐트
                 startActivity(new Intent(MapParking.this, MapGas.class));
             }
         });

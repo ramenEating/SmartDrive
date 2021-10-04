@@ -43,9 +43,9 @@ public class Mypage extends AppCompatActivity {
         array_mypage.add("즐겨찾기 설정");
         array_mypage.add("알림 설정");
         array_mypage.add("계정 설정");
-        array_mypage.add("약관 및 정책 추가");
+        array_mypage.add("정책 및 약관");
         array_mypage.add("어플리케이션 정보");
-        array_mypage.add("어플 사용 가이드북");
+        array_mypage.add("SmartDrive 사용 가이드북");
 
         // 어댑터 연결
         mMypageAdapter = new MypageAdapter(Mypage.this, array_mypage);
@@ -62,23 +62,34 @@ public class Mypage extends AppCompatActivity {
                     case 0:
                         intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
                         intent.putExtra("key0","즐겨찾기" );
+                        startActivity(intent);
+                        break;
                     case 1:
                         intent = new Intent(getApplicationContext(), Mypage_sub_alarm.class);
                         intent.putExtra("key1","알림설정" );
+                        startActivity(intent);
+                        break;
                     case 2:
-                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
+                        intent = new Intent(getApplicationContext(), Mypage_sub_account.class);
                         intent.putExtra("key2","계정설정" );
+                        startActivity(intent);
+                        break;
                     case 3:
-                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
-                        intent.putExtra("key3","약관 및 정책" );
+                        intent = new Intent(getApplicationContext(), Mypage_sub_terms.class);
+                        intent.putExtra("key3","정책 및 약관" );
+                        startActivity(intent);
+                        break;
                     case 4:
-                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
+                        intent = new Intent(getApplicationContext(), Mypage_sub_appinfo.class);
                         intent.putExtra("key4","어플리케이션 정보" );
+                        startActivity(intent);
+                        break;
                     case 5:
-                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
-                        intent.putExtra("key5","어플 사용 가이드북" );
+                        intent = new Intent(getApplicationContext(), Mypage_sub_guide.class);
+                        intent.putExtra("key5","SmartDrive 사용 가이드북" );
+                        startActivity(intent);
+                        break;
                 }
-                startActivity(intent);
             }
         });
     }
