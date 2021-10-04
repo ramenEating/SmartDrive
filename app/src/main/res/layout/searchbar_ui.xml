@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 툴바 넣기-->
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/search_bar"
+        android:id="@+id/l1"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="검색 기록"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/search_favorite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="즐겨찾기"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/search_local"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="지역 찾기"
+            android:textSize="7pt" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!-- 1) 검색 기록 클릭 시 나타나는 화면 -->
+        <!-- 2) 즐겨찾기 클릭 시 나타나는 화면 -->
+        <!-- 3) 지역 찾기 클릭 시 나타나는 화면 -->
+    </LinearLayout>
+</RelativeLayout>
