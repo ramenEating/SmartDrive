@@ -1,10 +1,11 @@
 package com.example.smartdrive;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,13 +21,13 @@ public class Mypage extends AppCompatActivity {
     private MypageAdapter mMypageAdapter;
     private Context mContext;
     private Toolbar mToolbar; //툴바 설정
+    final static int a=0;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mypage_ui);
-
-        this.mContext = getApplicationContext();
 
         mListView = (ListView) findViewById(R.id.mypageList);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -47,9 +48,41 @@ public class Mypage extends AppCompatActivity {
         array_mypage.add("어플 사용 가이드북");
 
         // 어댑터 연결
-        mMypageAdapter = new MypageAdapter(mContext, array_mypage);
+        mMypageAdapter = new MypageAdapter(Mypage.this, array_mypage);
         mListView.setAdapter(mMypageAdapter);
+
+        //리스트 클릭시 넘어가는 화면
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View v, int position, long l) {
+                                    //클릭된 항목의 부모뷰인 어댑터 뷰, 사용자 클릭한 항목에 해당하는 뷰,
+                                    //선택된 항목 위치, id=position과 동일
+                switch (position)
+                {
+                    case 0:
+                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
+                        intent.putExtra("key0","즐겨찾기" );
+                    case 1:
+                        intent = new Intent(getApplicationContext(), Mypage_sub_alarm.class);
+                        intent.putExtra("key1","알림설정" );
+                    case 2:
+                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
+                        intent.putExtra("key2","계정설정" );
+                    case 3:
+                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
+                        intent.putExtra("key3","약관 및 정책" );
+                    case 4:
+                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
+                        intent.putExtra("key4","어플리케이션 정보" );
+                    case 5:
+                        intent = new Intent(getApplicationContext(), Mypage_sub_favorites.class);
+                        intent.putExtra("key5","어플 사용 가이드북" );
+                }
+                startActivity(intent);
+            }
+        });
     }
+
 
 
 }

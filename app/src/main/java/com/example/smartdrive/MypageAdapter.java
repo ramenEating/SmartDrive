@@ -15,8 +15,6 @@ public class MypageAdapter extends BaseAdapter{
 
     private ArrayList<String> array_mountain;
 
-
-
     private ViewHolder mViewHolder;
 
 
@@ -34,7 +32,6 @@ public class MypageAdapter extends BaseAdapter{
     @Override
 
     public int getCount() {
-
         return array_mountain.size();
 
     }
@@ -65,7 +62,7 @@ public class MypageAdapter extends BaseAdapter{
 
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        // ViewHoldr 패턴
+        // View디자인 패턴
 
         if (convertView == null) {
 
@@ -84,11 +81,7 @@ public class MypageAdapter extends BaseAdapter{
 
 
         // View에 Data 세팅
-
         mViewHolder.txt_name.setText(array_mountain.get(position));
-
-
-
         return convertView;
 
     }
@@ -96,10 +89,7 @@ public class MypageAdapter extends BaseAdapter{
 
 
     public class ViewHolder {
-
         private TextView txt_name;
-
-
 
         public ViewHolder(View convertView) {
 
