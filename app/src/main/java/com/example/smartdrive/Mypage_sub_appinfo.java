@@ -38,7 +38,7 @@ public class Mypage_sub_appinfo extends AppCompatActivity {
         mToolbar.setTitleTextColor(Color.BLACK); //글자 색상
         setSupportActionBar(mToolbar); //툴바를 액션바로 사용함을 선언
 
-        mTextView.setText("가이드북 사진 삽입");
+        mTextView.setText("어플리케이션 버전 정보/개발자 이름");
 
         // 어댑터 연결
         //mMypageAdapter = new MypageAdapter(this, listMypage);
