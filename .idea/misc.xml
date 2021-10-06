@@ -34,6 +34,7 @@
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/chapter_list.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/chatbot_ui.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/customview.xml" value="0.1" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/favorite_item.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/gasinfo.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/layout_mypage_item.xml" value="0.25" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.22395833333333334" />
@@ -43,7 +44,7 @@
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_account_ui.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_alarm_ui.xml" value="0.2" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_appinfo_ui.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_favorite_ui.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_favorite_ui.xml" value="0.264" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_guide_ui.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_terms_ui.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_ui.xml" value="0.264" />
