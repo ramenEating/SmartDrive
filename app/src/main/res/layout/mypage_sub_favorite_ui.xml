@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <!-- 툴바 넣기-->
+    <!-- 툴바 넣기!-->
     <include layout="@layout/toolbar"
         android:id="@+id/toolbar"/>
 
