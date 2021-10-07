@@ -16,13 +16,17 @@
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.25" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/login_ui.xml" value="0.25" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/map_parking.xml" value="0.30416666666666664" />
-        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mapgas_miniinfo.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mapgas_miniinfo.xml" value="0.335" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mapparking_miniinfo.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mypage_sub_account_ui.xml" value="0.1953125" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mypage_sub_alarm_ui.xml" value="0.1953125" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mypage_sub_appinfo_ui.xml" value="0.1953125" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/mypage_ui.xml" value="0.16302083333333334" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/parkinginfo.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/restseat_prediction.xml" value="0.1" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/restseat_prediction_left.xml" value="0.165" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/restseat_prediction_talkbubble1.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/searchbar_ui.xml" value="0.1953125" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/titlebar.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/toolbar.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/cocou/SmartDrive/app/src/main/res/layout/topics_list.xml" value="0.2441123188405797" />
@@ -34,25 +38,18 @@
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/chapter_list.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/chatbot_ui.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/customview.xml" value="0.1" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/favorite_item.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/gasinfo.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/layout_mypage_item.xml" value="0.25" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/loading_ui.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/login_ui.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mapgas_miniinfo.xml" value="0.2" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mapparking_miniinfo.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_account_ui.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_alarm_ui.xml" value="0.2" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_appinfo_ui.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_favorite_ui.xml" value="0.264" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_guide_ui.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_terms_ui.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mapgas_miniinfo.xml" value="0.1" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_alarm_ui.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_sub_favorite_ui.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/mypage_ui.xml" value="0.264" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/parkinginfo.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/register_ui.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/restseat_prediction_talkbubble1.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/speechbubble.xml" value="0.1" />
-        <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/spinner_style.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/titlebar.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/toolbar.xml" value="0.1" />
         <entry key="..\:/Users/hhy67/AndroidStudioProjects/SmartDrive/app/src/main/res/layout/topics_list.xml" value="0.1" />
