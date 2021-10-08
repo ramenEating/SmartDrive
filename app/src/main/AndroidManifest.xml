@@ -2,10 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smartdrive">
 
+    <permission android:name="com.example.smartdrive.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
     <!-- 인터넷, 위치 권한 -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.example.smartdrive.permission.MAP_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 
     <application
         android:usesCleartextTraffic="true"
@@ -16,13 +23,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartDrive">
 
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCw0u3je_FYtVzG4jSr1pM0Z332OfNHves"
             />
+
         <meta-data
-            android:name = "com.kakao.sdk.AppKey"
-            android:value= "d996bec45e0d764e790e5bf10f58a690" />
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <activity android:name=".Loading"
             android:exported="true">
