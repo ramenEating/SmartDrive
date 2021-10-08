@@ -71,7 +71,6 @@ public class MapGas extends AppCompatActivity  {
             public void onMapReady(@NonNull GoogleMap googleMap) {
                 Log.d("MAp", "지도 준비됨");
                 mMap = googleMap;
-
             }
         });
 
@@ -250,5 +249,21 @@ public class MapGas extends AppCompatActivity  {
     }
     */
 
+    /*
+    public void onResume() {
+        super.onResume();
 
+        if(mMap != null) {
+            mMap.setMyLocationEnabled(true);
+        }
+    }
+
+    public void onPause() {
+        super.onPause();
+
+        if (mMap != null) {
+            mMap.setMyLocationEnabled(flase);
+        }
+    }
+*/
 }
