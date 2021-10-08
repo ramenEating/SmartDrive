@@ -48,6 +48,7 @@
             android:textStyle="bold"/>
     </LinearLayout>
 
+
     <!--맵뷰-->
     <!--
     <RelativeLayout
@@ -59,13 +60,13 @@
         -->
 
     <fragment
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/map_view"
-        tools:context=".MapGas"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_above="@+id/bottom_menu"
-        android:layout_below="@+id/search_bar" />
+        android:layout_below="@+id/search_bar"
+        tools:context=".MapGas" />
 
     <!--마이페이지-->
     <LinearLayout
@@ -92,12 +93,21 @@
         android:layout_above="@id/hiddenPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
+        <!--
         <ImageButton
             android:id="@+id/nowlocal"
             android:layout_margin="8dp"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:background="@drawable/nowlocal"/>
+            -->
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/nowlocal"
+            android:layout_margin="8dp"
+            android:text="!" />
     </LinearLayout>
 
     <!--숨겨진 페이지(주차장 요약 정보창)-->
