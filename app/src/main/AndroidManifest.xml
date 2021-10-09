@@ -51,7 +51,7 @@
         <activity android:name=".MainActivity"/>
 
         <activity android:name=".MapParking" android:exported="true">
-          <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -73,6 +73,7 @@
         <activity android:name=".Mypage_sub_terms"/>
         <activity android:name=".Mypage_sub_appinfo"/>
         <activity android:name=".Mypage_sub_guide"/>
+
 
     </application>
 </manifest>

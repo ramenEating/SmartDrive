@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <!--숨겨진 페이지(주차장 요약 정보창)-->
+    <!--바로 아래 레이아웃 빈칸에 넣어야 함
+        조절하기 위해 아직 가려두지 않음
+        android:visibility="gone"-->
+
+
+        android:id="@+id/hiddenPage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ripple_button"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/popupclose"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/xicon"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:id="@+id/miniinfo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주유소1"
+                    android:textStyle="bold"
+                    android:textSize="9pt"/>
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/buttonStar"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="250dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/staroff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주유소 주소"
+                android:textSize="9pt"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주유 요금"
+                android:textSize="9pt"/>
+        </LinearLayout>
+</LinearLayout>
