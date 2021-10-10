@@ -15,7 +15,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     private List<String> chapterList;
     private HashMap<String, List<String>> topicsList;
 
-    public ExpandableListViewAdapter(parkinginfo context, List<String> chapterList, HashMap<String, List<String>> topicsList) {
+    public ExpandableListViewAdapter(Parkinginfo context, List<String> chapterList, HashMap<String, List<String>> topicsList) {
         this.context = context;
         this.chapterList = chapterList;
         this.topicsList = topicsList;

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class parkinginfo extends AppCompatActivity {
+public class Parkinginfo extends AppCompatActivity {
     ExpandableListAdapter listViewAdapter;
     ExpandableListView expandableListView;
     List<String> chapterList; //상위 리스트
