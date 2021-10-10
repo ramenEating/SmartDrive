@@ -49,14 +49,43 @@
             android:textStyle="bold"/>
     </LinearLayout>
     <!--맵뷰-->
-    <RelativeLayout
-        android:id="@+id/map_view"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/bottom_menu"
-        android:layout_below="@+id/search_bar" />
+        android:layout_below="@+id/search_bar">
 
-    <!--마이페이지-->
+        <!--맵뷰-->
+        <fragment
+            android:id="@+id/map_view"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- 주유소 세부 정보 페이지-->
+        <include
+            layout="@layout/miniinfo_parking"
+            android:visibility="invisible" />
+        <!-- 서치바 누르면 나오는 ui-->
+        <include
+            layout="@layout/searchbar_ui"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="@drawable/nowlocalbutton"
+        android:layout_margin="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/nowlocal"
+            android:layout_margin="8dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/nowlocal"/>
+    </LinearLayout>
+
+
+    <!-- 마이페이지-->
     <LinearLayout
         android:id="@+id/bottom_menu"
         android:background="#FFFFFF"
@@ -75,99 +104,6 @@
             android:textSize="18dp"
             android:textStyle="bold"/>
     </LinearLayout>
-    <LinearLayout
-        android:background="@drawable/nowlocalbutton"
-        android:layout_margin="12dp"
-        android:layout_above="@id/hiddenPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageButton
-            android:id="@+id/nowlocal"
-            android:layout_margin="8dp"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:background="@drawable/nowlocal"/>
-    </LinearLayout>
 
-    <!--숨겨진 페이지(주차장 요약 정보창)-->
-    <!--바로 아래 레이아웃 빈칸에 넣어야 함
-        조절하기 위해 아직 가려두지 않음
-        android:visibility="gone"-->
-    <LinearLayout
 
-        android:id="@+id/hiddenPage"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/ripple_button"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageButton
-                    android:id="@+id/popupclose"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/xicon"
-                    android:layout_marginBottom="20dp"/>
-                <TextView
-                    android:id="@+id/miniinfo_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주차장1"
-                    android:textStyle="bold"
-                    android:textSize="9pt"/>
-            </LinearLayout>
-            <ImageButton
-                android:id="@+id/buttonStar"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="250dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/staroff"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="주차장 주소"
-                android:textSize="9pt"/>
-            <LinearLayout
-                android:layout_marginTop="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주차 요금"
-                    android:textSize="8pt"/>
-                <TextView
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="|"
-                    android:textStyle="bold"
-                    android:textSize="8pt"/>
-                <TextView
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="실시간 잔여석"
-                    android:textSize="8pt"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
 </RelativeLayout>

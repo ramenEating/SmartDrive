@@ -49,27 +49,27 @@
     </LinearLayout>
 
 
-    <!--맵뷰-->
-    <!--
-    <RelativeLayout
-        android:id="@+id/map_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bottom_menu"
-        android:layout_below="@+id/search_bar" />
-        -->
-
-    <fragment
-        android:id="@+id/map_view"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_menu"
-        android:layout_below="@+id/search_bar"
-        tools:context=".MapGas" />
-
-
-
+        android:layout_below="@+id/search_bar">
+        <!--맵뷰-->
+        <fragment
+            android:id="@+id/map_view"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapGas" />
+        <!-- 주유소 세부 정보 페이지 android:visibility="invisible" -->
+        <include
+            layout="@layout/miniinfo_gas"
+            android:visibility="invisible"/>
+        <!-- 서치바 누르면 나오는 ui-->
+        <include
+            layout="@layout/searchbar_ui"
+            android:visibility="invisible"/>
+    </FrameLayout>
 
     <Button
         android:id="@+id/nowlocal"
@@ -77,11 +77,6 @@
         android:layout_height="35dp"
         android:layout_alignTop="@+id/bottom_menu"
         android:text="!" />
-
-    <!-- 세부 정보 페이지-->
-    <include
-        layout="@layout/miniinfo_gas"
-        android:visibility="invisible" />
 
     <!--마이페이지-->
     <LinearLayout
@@ -102,10 +97,10 @@
             android:textSize="18dp"
             android:textStyle="bold"/>
     </LinearLayout>
+
     <LinearLayout
         android:background="@drawable/nowlocalbutton"
         android:layout_margin="12dp"
-        android:layout_above="@id/hiddenPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
