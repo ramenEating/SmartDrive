@@ -11,12 +11,12 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
         <EditText
-            android:id="@+id/et_name"
+            android:id="@+id/et_id"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@color/input_register_bg"
-            android:hint = "@string/hint_name"
+            android:hint = "@string/hint_id"
             android:inputType = "textCapWords"
             android:padding = "10dp"
             android:textColor="@color/input_register"
@@ -33,7 +33,7 @@
             android:textColor="@color/input_register"
             android:textColorHint="@color/input_register_hint" />
         <Button
-            android:id="@+id/btn_goregister"
+            android:id="@+id/registerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="회원가입"/>

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Loading extends AppCompatActivity {
@@ -18,7 +17,7 @@ public class Loading extends AppCompatActivity {
         h.postDelayed(new Runnable() {
             @Override
             public   void run() {
-                 startActivity(new Intent(Loading.this, Login.class));
+                 startActivity(new Intent(Loading.this, Login_menu.class));
                 finish();
             }
         }, 3000);

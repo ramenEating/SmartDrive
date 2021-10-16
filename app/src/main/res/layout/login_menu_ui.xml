@@ -10,7 +10,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
-
         <Button
             android:id="@+id/btn_member"
             android:layout_width="289dp"
@@ -18,7 +17,7 @@
             android:layout_marginTop="50dip"
             android:background="@color/input_register_bg"
             android:textStyle="bold"
-            android:text="@string/btn_login" />
+            android:text="회원 로그인" />
 
         <Button
             android:id="@+id/btn_nonmember"
@@ -37,9 +36,6 @@
             android:layout_marginTop="50dip"
             android:textStyle="bold"
             android:text="@string/btn_register" />
-
-
-
 
     </LinearLayout>
 </RelativeLayout>
